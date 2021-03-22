@@ -1,0 +1,5 @@
+This is: Test File #2
+Bug Fixes: 1. Can now edit files right after file creation
+           2. Files are writable (were'nt because there were no lines in the files)
+
+For Test File #3: Make Backspace function manually so CTRL + BACKSPACE won't bug the server
