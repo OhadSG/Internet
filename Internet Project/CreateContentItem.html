@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="Styles.css" type="text/css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <title>Create Content</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td align="left">
+                            <a href="https://www.youtube.com/">
+                                <img class="Banner" src="Images/YoutubeBanner.png" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="left" class="MarginBottom">
+
+                    <tr>
+                        <td>
+                            <button type="button" onclick="window.location.href = 'Home.html'" style="border-top-left-radius:30px; border-bottom-left-radius:30px; padding-left:15px;">
+                                Home
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="window.location.href = 'Registration.html'" style="">
+                                Register
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="window.location.href = 'CreateContentItem.html'" disabled style="background-color:red;">
+                                Upload Video
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="window.location.href = 'SharedContent.html'" style="border-top-right-radius:30px; border-bottom-right-radius:30px; padding-right:15px;">
+                                Shared Content
+                            </button>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+
+    </table>
+    <form method="post" action="?">
+        <table align="center" style="background-image: linear-gradient(#414141,#1b1b1b); padding-left:20px; padding-right:20px; padding-bottom:10px; border-color:white; border-width:1px; border-style:solid;">
+            <tr>
+                <td>
+                    <p>Video Link</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="url" id="videoLink" name="videoLink"  style="width:300px;" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Picture Link</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="url" id="pictureLink" name="pictureLink"  style="width:300px;"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Name
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="name" name="name"  style="width:300px;"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Name of the creator
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Views
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="CreatorName" name="CreatorName" style="width:160px;"/>
+                </td>
+                <td>
+                    <input type="number" id="views" name="views" min="0" style="width:90px;"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Link to the creator's page
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="url" id="CreatorPage" name="CreatorPage"  style="width:300px;"/>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <input type="submit" id="upload" name="upload" value="Upload" class="SubmitRegister" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,125 @@
+﻿body {
+    background-color: #111111;
+    margin: 0px;
+    padding:0px;
+    color: white;
+    overflow:scroll;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font: bold x-large calibri;
+}
+
+canvas {
+    padding: 0px;
+    background-color: transparent;
+    position: absolute;
+}
+
+img {
+    background-color: white;
+    position: absolute;
+    padding: 0px;
+}
+
+table.Container {
+    background-color: #0a0a0a;
+    float:left;
+}
+
+table.SubContainer {
+    background-color: #0a0a0a;
+    border: 1px solid white;
+}
+
+.radio-toolbar input[type="radio"] {
+    display: none;
+}
+.radio-toolbar input[type="color"] {
+    display: none;
+}
+.ImportExport input[type="file"] {
+    display: none;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    background-color: white;
+    width: 120px;
+    height: 17px;
+    padding: 2.5px;
+    padding-bottom: 10px;
+    border: 2px solid white;
+
+    text-align: center;
+    font-family: Calibri;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all linear 0.25s;
+}
+
+.radio-toolbar-1 {
+    display: inline-block;
+    text-align: center;
+    font-family: Calibri;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    width: 100%;
+}
+
+input[type="range"]{
+    width:100%;
+    margin:0px;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: #8d8d8d;
+}
+
+.radio-toolbar input[type="radio"]:disabled + label {
+    background-color: #cacaca;
+    border: 2px solid #cacaca;
+}
+
+.ImportExport label {
+    background-color: red;
+    height: 34px;
+    border: 2px solid black;
+    text-align: center;
+    font-family: Calibri;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all linear 0.25s;
+    padding-top:1.25px;
+    padding-bottom:1.5px;
+    padding-left:35.5px;
+    padding-right:35.5px;
+}
+
+button.ImportExport {
+    background-color: red;
+    width: 129px;
+    height: 30px;
+    border: 2px solid black;
+    text-align: center;
+    font-family: Calibri;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all linear 0.25s;
+}
+
+button.ColorButton{
+    width: 25px;
+    height: 25px;
+}

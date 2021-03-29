@@ -1,0 +1,156 @@
+﻿html {
+    min-height:100%;
+}
+
+body {
+    height:100%;
+    background-image: linear-gradient(#1b1b1b,#414141);
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+a {
+    color: white;
+    font-family: Arial;
+    font-size: larger;
+    text-decoration: underline;
+    font-weight:bold;
+    margin-right:10px;
+}
+
+h1 {
+    color: white;
+    font-family: Calibri;
+    font-size: larger;
+}
+
+label {
+    color: white;
+    font-family: Arial;
+    font-size: larger;
+}
+
+p {
+    color: white;
+    font-family: Arial;
+    font-size: medium;
+    margin-left:10px;
+}
+
+img {
+    margin-top:20px;
+    margin-right:20px;
+}
+
+.VideoPic {
+    height: 180px;
+    width: 320px;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    margin-bottom:-15px;
+}
+
+.Banner {
+    height: 80px;
+    width: auto;
+    background-color: white;
+    border: solid;
+    border-color: red;
+    border-width: 4px;
+    border-radius: 20px 40px 40px 20px;
+    margin-bottom: 40px;
+}
+
+.MarginBottom {
+    margin-bottom:10px;
+}
+
+button {
+    font-family:Calibri;
+    font-size: larger;
+    color:black;
+    background-color:white;
+    border: solid;
+    border-width:2px;
+    border-color:white;
+    font-weight:900;
+    padding:10px;
+    margin:-3px;
+    cursor:pointer;
+}
+
+.Title {
+    font-size:xx-large;
+}
+
+input {
+    font-size: larger;
+    font-family: Calibri;
+    margin-right: 10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 140px;
+    height: 20px;
+    padding: 5px;
+    border-color: black;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.SubmitRegister {
+    height:auto;
+    width:auto;
+    margin-top:10px;
+    border-radius:40px;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    border-color:black;
+    border-width:3px;
+    border-style:solid;
+    background-color:white;
+    font-size:xx-large;
+    font-weight:900;
+}
+
+.radio-toolbar input[type="radio"] {
+    display: none;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    background-color: white;
+    width:150px;
+    height:17px;
+    margin-right: 13px;
+    padding:2.5px;
+    padding-bottom:10px;
+    border:2px solid black;
+    border-radius:20px;
+    text-align:center;
+    font-family: Calibri;
+    color:black;
+    font-size: larger;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.radio-toolbar input[type="radio"][id="male"]:checked + label {
+    background-color: blue;
+    color: white;
+}
+
+.radio-toolbar input[type="radio"][id="female"]:checked + label {
+    background-color: hotpink;
+    color: white;
+}
+
+.H1 {
+    color: white;
+    font-family: Arial;
+    font-size: larger;
+    text-decoration:none;
+}

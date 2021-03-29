@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="Styles.css" type="text/css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <title>Shared Content</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td align="left">
+                            <a href="https://www.youtube.com/">
+                                <img class="Banner" src="Images/YoutubeBanner.png" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="left" class="MarginBottom">
+
+                    <tr>
+                        <td>
+                            <button type="button" onclick="window.location.href = 'Home.html'" style="border-top-left-radius:30px; border-bottom-left-radius:30px; padding-left:15px;">
+                                Home
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="window.location.href = 'Registration.html'" style="">
+                                Register
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="window.location.href = 'CreateContentItem.html'" style="">
+                                Upload Video
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="window.location.href = 'SharedContent.html'" disabled style="background-color:red; border-top-right-radius:30px; border-bottom-right-radius:30px; padding-right:15px;">
+                                Shared Content
+                            </button>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1 class="Title">
+                    Uploads
+                </h1>
+            </td>
+        </tr>
+    </table>
+    <table id="ContentTable" align="left" style="background-color:transparent;"></table>
+    <script>
+        const vids = [
+            {
+                Link: '',
+                Picture: 'Images/moon.jpeg',
+                Name: 'Moon',
+                Creator: 'Astroligist',
+                CreatorLink: '',
+                Views: '10943'
+            },
+            {
+                Link: '',
+                Picture: 'Images/nature.jpg',
+                Name: 'Nature',
+                Creator: 'Nature Lover',
+                CreatorLink: '',
+                Views: '836'
+            },
+            {
+                Link: '',
+                Picture: 'Images/skys.jpg',
+                Name: 'Skys',
+                Creator: 'Clouds420',
+                CreatorLink: '',
+                Views: '74931'
+            },
+            {
+                Link: '',
+                Picture: 'Images/stars.jpg',
+                Name: 'Stars',
+                Creator: 'AstronautForLife',
+                CreatorLink: '',
+                Views: '793701'
+            },
+            {
+                Link: 'https://www.youtube.com/watch?v=9XHc1C4qrzo',
+                Picture: 'Images/myvid.webp',
+                Name: 'Rainbow Six Siege Montage #1',
+                Creator: 'KingSolomon',
+                CreatorLink: 'https://www.youtube.com/channel/UCD3jg2hXxiagNN3TWLwBg7Q',
+                Views: '347'
+            }
+        ];
+
+        var table = document.getElementById("ContentTable");
+        if (document.createElement("template").content) {
+            for (var i = 0; i < 4; i++) {
+                var row = table.insertRow(i);
+                for (var j = 0; j < 5; j++) {
+                    var cell = row.insertCell(j);
+                    var k = Math.floor(Math.random() * 5);
+                    const template = `
+                         <table class="MarginBottom">
+                            <tr>
+                                <td>
+                                    <a href="${vids[k].Link}">
+                                        <img src="${vids[k].Picture}" class="VideoPic" />
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h1 style="font-size:larger; margin-bottom:-15px;font-weight:normal;">${vids[k].Name}</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="${vids[k].CreatorLink}" style="text-decoration:none;">
+                                        <h1 style="font-size:small; margin-bottom:-35px;">${vids[k].Creator}</h1>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h1 style="font-size:small; color:#b4b4b4;">Views: ${vids[k].Views}</h1>
+                                </td>
+                            </tr>
+                        </table>
+                        `;
+                    cell.innerHTML = template;
+                }
+            }
+        }
+        else {
+            var row = table.insertRow(2);
+            var cell = row.insertCell(0);
+            cell.innerHTML = "<h1>Can't Display Content</h1>";
+        }
+    </script>
+</body>
+</html>

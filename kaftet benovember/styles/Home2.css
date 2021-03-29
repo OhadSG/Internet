@@ -1,0 +1,200 @@
+﻿body {
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    font-family:Calibri;
+    background-color:#1e1e1e;
+}
+
+table{
+    width:100%;
+}
+
+table[id="flags"]{
+    border:3px black solid;
+    border-radius:25px;
+    padding:10px;
+    width: 70vw;
+    background-image:linear-gradient(blue,white,blue);
+}
+
+table.charts {
+    margin-bottom: 10vh;
+    width: 95vw;
+    margin-top:4vh;
+}
+
+
+td.CR {
+    width: 30%;
+    text-align: center;
+    vertical-align: bottom;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(#c4c4c4,#e9e9e9,#c4c4c4);
+}
+
+td.CR2[id="tdyes"] {
+    width: 30%;
+    text-align: center;
+    vertical-align: bottom;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0px;
+    background-image: linear-gradient(#0f7000,#89ff42);
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+td.CR2[id="tdno"] {
+    width: 30%;
+    text-align: center;
+    vertical-align: bottom;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0px;
+    background-image: linear-gradient(#650000,#ff0000);
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+td.CR2[id="tdabstain"] {
+    width: 30%;
+    text-align: center;
+    vertical-align: bottom;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0px;
+    background-image: linear-gradient(#414141,#aeaeae);
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+td.CR2:hover[id="tdyes"] {
+    width: 30%;
+    text-align: center;
+    vertical-align: bottom;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0px;
+    background-image: linear-gradient(#0f7000,#89ff42);
+    cursor: pointer;
+    padding-bottom: 10px;
+    opacity: 0.75;
+
+}
+
+td.CR2:hover[id="tdno"] {
+    width: 30%;
+    text-align: center;
+    vertical-align: bottom;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0px;
+    background-image: linear-gradient(#650000,#ff0000);
+    cursor: pointer;
+    padding-bottom: 10px;
+    opacity: 0.75;
+}
+
+td.CR2:hover[id="tdabstain"] {
+    width: 30%;
+    text-align: center;
+    vertical-align: bottom;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0px;
+    background-image: linear-gradient(#414141,#aeaeae);
+    cursor: pointer;
+    padding-bottom: 10px;
+    opacity: 0.75;
+}
+
+th.CH {
+    font-size: 200%;
+    font-weight: 900;
+    width: 30%;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+img.flag{
+    width: 6vw;
+    height: 4vw;
+    padding: 0px;
+    margin: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+
+    transition: opacity linear 0.1s;
+}
+
+img.flag:hover {
+    width: 6vw;
+    height: 4vw;
+    padding: 0px;
+    margin: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+    opacity:0.75;
+    transition: opacity linear 0.1s;
+
+}
+
+img.flag2:hover {
+    width: 6vw;
+    height: 4vw;
+    padding: 0px;
+    margin: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: opacity linear 0.1s;
+}
+
+img.flag2 {
+    width: 6vw;
+    height: 4vw;
+    padding: 0px;
+    margin: 3px;
+    border: 1px solid black;
+    cursor: auto;
+    opacity: 0.5;
+    transition: opacity linear 0.1s;
+}
+
+img.flaglock {
+    width: 6vw;
+    height: 4vw;
+    padding: 0px;
+    margin: 3px;
+    border: 1px solid black;
+    cursor: not-allowed;
+    -webkit-filter: grayscale(100%);
+    filter:grayscale(100%);
+}
+
+img.chartflag {
+    width: 6vw;
+    height: 4vw;
+    padding: 0px;
+    margin: 3px;
+    border: 1px solid black;
+    visibility:hidden;
+}
+
+img.chartflag2 {
+    width: 6vw;
+    height: 4vw;
+    padding: 0px;
+    margin: 3px;
+    border: 1px solid black;
+}
+
+td.flag{
+    margin:0px;
+    padding:0px;
+}

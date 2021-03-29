@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="Styles.css" type="text/css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td align="left">
+                            <a href="https://www.youtube.com/">
+                                <img class="Banner" src="Images/YoutubeBanner.png" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table align="left" class="MarginBottom">
+
+                    <tr>
+                        <td>
+                            <button type="button" onclick="window.location.href = 'Home.html'" style="border-top-left-radius:30px; border-bottom-left-radius:30px; padding-left:15px;">
+                                Home
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="window.location.href = 'Registration.html'" disabled style="background-color:red;">
+                                Register
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="window.location.href = 'CreateContentItem.html'" style="">
+                                Upload Video
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="window.location.href = 'SharedContent.html'" style="border-top-right-radius:30px; border-bottom-right-radius:30px; padding-right:15px;">
+                                Shared Content
+                            </button>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+    <form method="post" action="?">
+        <table align="center" style="background-image: linear-gradient(#414141,#1b1b1b); padding-left:20px; padding-right:20px; padding-bottom:10px; border-color:white; border-width:1px; border-style:solid;">
+            <tr>
+                <td>
+                    <p>First name</p>
+                </td>
+                <td>
+                    <p>Last name</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="firstName" name="firstName" />
+                </td>
+                <td>
+                    <input type="text" id="lastName" name="lastName" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="radio-toolbar">
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Date of birth</p>
+                </td>
+                <td>
+                    <p>
+                        Username
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" />
+                </td>
+                <td>
+                    <input type="text" id="userName" name="userName" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Password
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Re-enter password
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" id="password1" name="password1" />
+                </td>
+                <td>
+                    <input type="password" id="password2" name="password2" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Email
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="email" id="email" name="email" style="width:320px;" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Country
+                    </p>
+                </td>
+                <td>
+                    <p style="margin-left:-20px;">
+                        Phone number
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="search" id="country" name="country" style="font-size: larger;font-family: Calibri;margin-right: 0px;margin-top: -8px;margin-bottom: 10px;font-weight: bold;width: 130px;height: 33px;border-color: black;border-radius: 20px;padding-left: 10px;"/>
+                </td>
+                <td>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" style="margin-left:-30px; width:170px;"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="TOS" name="TOS" style="width:auto; height:auto;"/>
+                    <label for="TOS" style="font-size:small;">check this box if you agree to our <a style="font-weight:100; font-size:small;">Terms Of Service</a></label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" id="sumbit" name="submit" value="Register" class="SubmitRegister"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

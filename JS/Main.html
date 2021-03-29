@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Paint</title>
+    <link href="Styles.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <table class="Container">
+        <tr>
+            <td>
+                <table class="SubContainer">
+                    <tr>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="shape" name="ShapeRadio" value="shape" disabled />
+                                <label for="shape">Shape</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="filledShape" name="ShapeRadio" value="filledShape" disabled />
+                                <label for="filledShape">Filled Shape</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="completeLine" name="ShapeRadio" value="completeLine" disabled />
+                                <label for="completeLine">Complete Line</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="select" name="ShapeRadio" value="select" disabled />
+                                <label for="select">Select</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="text" name="ShapeRadio" value="text" disabled />
+                                <label for="text">Text</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="colorPicker" name="ShapeRadio" value="colorPicker"/>
+                                <label for="colorPicker">Color Picker</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="eraser" name="ShapeRadio" value="eraser" />
+                                <label for="eraser">Eraser</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="bucket" name="ShapeRadio" value="bucket" />
+                                <label for="bucket">Bucket</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="brush" name="ShapeRadio" value="brush" checked />
+                                <label for="brush">Brush</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="strokeLine" name="ShapeRadio" value="strokeLine" />
+                                <label for="strokeLine">Line</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="strokeRect" name="ShapeRadio" value="strokeRect" />
+                                <label for="strokeRect">Rectangle</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="fillRect" name="ShapeRadio" value="fillRect" />
+                                <label for="fillRect">Filled Rectangle</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="strokeCircle" name="ShapeRadio" value="strokeCircle" />
+                                <label for="strokeCircle">Circle</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="fillCircle" name="ShapeRadio" value="fillCircle" />
+                                <label for="fillCircle">Filled Circle</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="strokeEllipse" name="ShapeRadio" value="strokeEllipse" />
+                                <label for="strokeEllipse">Ellipse</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="fillEllipse" name="ShapeRadio" value="fillEllipse" />
+                                <label for="fillEllipse">Filled Ellipse</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="SubContainer">
+                    <!-- prefs -->
+                    <tr>
+                        <td colspan="2" align="center">
+                            <div class="radio-toolbar-1">
+                                <label for="strokeWidth" id="strokeWidthLabel"></label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <div class="radio-toolbar-1">
+                                <input type="range" min="1" max="256" value="5" step="1" id="strokeWidth" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="color" id="colorPicker1" />
+                                <label for="colorPicker1" title="Stroke Color" id="label1"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="color" id="colorPicker2" />
+                                <label for="colorPicker2" title="Fill Color" id="label2"></label>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- settings -->
+                    <tr>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="CircleType1" name="circle" value="1" checked />
+                                <label for="CircleType1" title="Drawing style: Expand from center (Only effective when drawing circles and ellipses)">From center(1)</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="CircleType2" name="circle" value="2" />
+                                <label for="CircleType2" title="Drawing style: Expand from start point to end point (Only effective when drawing circles and ellipses)">P to P(1)</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="CircleType3" name="circle" value="3" />
+                                <label for="CircleType3" title="Drawing style: Expand from center (Only effective when drawing circles and ellipses)">From center(2)</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio-toolbar">
+                                <input type="radio" id="CircleType4" name="circle" value="4" />
+                                <label for="CircleType4" title="Drawing style: Expand from start point to end point (Only effective when drawing circles)">P to P(2)</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="SubContainer">
+                    <!-- save -->
+                    <tr>
+                        <td>
+                            <div class="ImportExport">
+                                <input id="import" type="file" />
+                                <label for="import">Import</label>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="ImportExport" onclick="Export()">
+                                Export
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="Container">
+        <tr>
+            <td>
+                <table align="center">
+                    <tr>
+                        <td>
+                            <button onclick="ChangeColor('black')" class="ColorButton" style="background-color:#000000; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('darkgray')" class="ColorButton" style="background-color:#696969; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('gray')" class="ColorButton" style="background-color:#808080; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('lightgray')" class="ColorButton" style="background-color:#D3D3D3; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('white')" class="ColorButton" style="background-color:#ffffff; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('lightpink')" class="ColorButton" style="background-color:#FFC0CB; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('pink')" class="ColorButton" style="background-color:#FF69B4; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('red')" class="ColorButton" style="background-color:#ff1100; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('orange')" class="ColorButton" style="background-color:#FFA500; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('gold')" class="ColorButton" style="background-color:#FFD700; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('yellow')" class="ColorButton" style="background-color:#FFFF00; border: 1px solid white;"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="ChangeColor('darkpink')" class="ColorButton" style="background-color:#C71585; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('purple')" class="ColorButton" style="background-color:#800080; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('darkblue')" class="ColorButton" style="background-color:#000080; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('blue')" class="ColorButton" style="background-color:#0000ff; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('lightblue')" class="ColorButton" style="background-color:#00BFFF; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('turquoise')" class="ColorButton" style="background-color:#40E0D0; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('lightgreen')" class="ColorButton" style="background-color:#7CFC00; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('green')" class="ColorButton" style="background-color:#00b400; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('darkgreen')" class="ColorButton" style="background-color:#006400; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('darkbrown')" class="ColorButton" style="background-color:#8B4513; border: 1px solid white;"></button>
+                        </td>
+                        <td>
+                            <button onclick="ChangeColor('brown')" class="ColorButton" style="background-color:#b4522d; border: 1px solid white;"></button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="width:800px;">
+                    <img id="img" width="800" height="800" />
+                    <canvas id="Canvas" width="800" height="800"></canvas>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <script src="Main.js" ></script>
+</body>
+</html>
